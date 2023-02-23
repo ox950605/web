@@ -5,141 +5,140 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>我的網站</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="index.html"/>
-  <link rel="stylesheet" type="text/css" href="assets/waifu.min.css?v=1.4.2"/>
+  <link rel="stylesheet" href="index.html" />
+  <link rel="stylesheet" type="text/css" href="assets/waifu.min.css?v=1.4.2" />
 </head>
 
-<body>
+<body background="404.jpg">
   <header>
     <img class="logo" src="images/logo.svg" alt="logo">
     <nav>
       <ul class="nav_links">
-        <li><a href="#">服務</a></li>
+        <li><a href="index_lived2d.html">服務</a></li>
         <li><a href="index_projects.html">作品集</a></li>
         <li><a href="#">關於</a></li>
       </ul>
     </nav>
-      <a class="cta" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><button>聯絡</button></a> 
+    <a class="cta" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><button>聯絡</button></a>
   </header>
 
 
-  
+
   <div class="title_1">
-    <div><h1>歡迎來到我們的網站</h1></div>
-    
     <div>
-      <h4>以下是我們的學習平台</h4><br>
-  </div>
+      <img src="images/blog.png" alt="blog">
+    </div>
+    <div class="imgview">
+      <img src="images/404.jpg" alt="404" >
+    </div>
 
-    <div style="display: block;font-size: 1.2rem;padding: 10px;">
-      <h4>我們有加入ewant的成為前端設計師：透過HTML＋CSS學習網頁設計</h4>     </div>
-    
     <div>
-      <img src="images/網頁設計.png" alt="錯誤" width="560" height="315" />
+      <h4>以下是我們的學習</h4><br>
     </div>
-    <div>
-      <h4>我們也利用這位youtuber的影片來學習HTML</h4>
-    </div>
-    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player"
-    frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen></iframe>
-    </div>
-    
-  </div>
 
-  
-  <select>
-    <option value="apple">蘋果</option>
-    <option value="banana">香蕉</option>
-    <option value="orange">橘子</option>
-  </select>
+    <ul>
+      <li>c++</li>
+      <ol>hello world!</ol>
+      <ol>cin</ol>
+      <ol>cout</ol>
+
+    </ul>
+
+
+    <select>
+      <option value="apple">蘋果</option>
+      <option value="banana">香蕉</option>
+      <option value="orange">橘子</option>
+    </select>
     <!-- waifu-tips.js 依賴 JQuery 庫 -->
-  <script src="assets/jquery.min.js?v=3.3.1"></script>
-    
+    <script src="assets/jquery.min.js?v=3.3.1"></script>
+
     <!-- 實現拖動效果，需引入 JQuery UI -->
-  <script src="assets/jquery-ui.min.js?v=1.12.1"></script>
-      
-  <div class="waifu">
-     <div class="waifu-tips"></div>
-       <canvas id="live2d" class="live2d"></canvas>
-     <div class="waifu-tool">
-          <span class="fui-home"></span>
-          <span class="fui-chat"></span>
-          <span class="fui-eye"></span>
-          <span class="fui-user"></span>
-          <span class="fui-photo"></span>
-          <span class="fui-info-circle"></span>
-          <span class="fui-cross"></span>
-       </div>
+    <script src="assets/jquery-ui.min.js?v=1.12.1"></script>
+
+    <div class="waifu">
+      <div class="waifu-tips"></div>
+      <canvas id="live2d" class="live2d"></canvas>
+      <div class="waifu-tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <span class="fui-info-circle"></span>
+        <span class="fui-cross"></span>
+      </div>
     </div>
-        
+
     <script src="assets/waifu-tips.min.js?v=1.4.2"></script>
     <script src="assets/live2d.min.js?v=1.0.5"></script>
     <script type="text/javascript">
-        <!-- 可直接修改參數 -->
+        < !--可直接修改參數 -->
         // 後端介面
         live2d_settings['modelAPI'] = '//live2d.fghrsh.net/api/';   // 自建 API 修改這裡
-        live2d_settings['tipsMessage'] = 'waifu-tips.json';         // 同目錄下可省略路徑
-        live2d_settings['hitokotoAPI'] = 'jinrishici.com';          // 一言 API，可選 'lwl12.com', 'hitokoto.cn', 'jinrishici.com'(古詩詞)
-        
-        // 預設模型
-        live2d_settings['modelId'] = 1;                 // 預設模型 ID，可在 F12 控制檯找到
-        live2d_settings['modelTexturesId'] = 53;        // 預設材質 ID，可在 F12 控制檯找到
-        
-        // 工具欄設定
-        live2d_settings['showToolMenu'] = true;         // 顯示工具欄，可選 true(真), false(假)
-        live2d_settings['canCloseLive2d'] = true;       // 顯示關閉看板娘按鈕，可選 true(真), false(假)
-        live2d_settings['canSwitchModel'] = true;       // 顯示模型切換按鈕，可選 true(真), false(假)
-        live2d_settings['canSwitchTextures'] = true;    // 顯示材質切換按鈕，可選 true(真), false(假)
-        live2d_settings['canSwitchHitokoto'] = true;    // 顯示一言切換按鈕，可選 true(真), false(假)
-        live2d_settings['canTakeScreenshot'] = true;    // 顯示看板娘截圖按鈕，可選 true(真), false(假)
-        live2d_settings['canTurnToHomePage'] = false;   // 顯示返回首頁按鈕，可選 true(真), false(假)
-        live2d_settings['canTurnToAboutPage'] = false;  // 顯示跳轉關於頁按鈕，可選 true(真), false(假)
-        
-        // 模型切換模式
-        live2d_settings['modelStorage'] = false;       // 記錄ID(重新整理後恢復)，可選true(真), false(假)
-        live2d_settings['modelRandMode'] = 'switch';      // 模型切換，可選 'rand'(隨機), 'switch'(順序)
-        live2d_settings['modelTexturesRandMode'] = 'rand';// 材質切換，可選 'rand'(隨機), 'switch'(順序)
-        
-        // 提示訊息選項
-        live2d_settings['showHitokoto'] = true;         // 顯示一言
-        live2d_settings['showF12Status'] = true;        // 顯示載入狀態
-        live2d_settings['showF12Message'] = false;      // 顯示看板娘訊息
-        live2d_settings['showF12OpenMsg'] = true;       // 顯示控制檯打開提示
-        live2d_settings['showCopyMessage'] = true;      // 顯示 複製內容 提示
-        live2d_settings['showWelcomeMessage'] = true;   // 顯示進入面頁歡迎詞
-        
-        //看板娘樣式設定
-        live2d_settings['waifuSize'] = '400x300';     // 看板娘大小，例如 '280x250', '600x535'
-        live2d_settings['waifuTipsSize'] = '300x80';  // 提示框大小，例如 '250x70', '570x150'
-        live2d_settings['waifuFontSize'] = '23px';    // 提示框字型，例如 '12px', '30px'
-        live2d_settings['waifuToolFont'] = '23px';    // 工具欄字型，例如 '14px', '36px'
-        live2d_settings['waifuToolLine'] = '28px';    // 工具欄行高，例如 '20px', '36px'
-        live2d_settings['waifuToolTop'] = '-30px'     // 工具欄頂部邊距，例如 '0px', '-60px'
-        live2d_settings['waifuMinWidth'] = '768px'; // 面頁小於 指定寬度 隱藏看板娘，例如 'disable'(禁用), '768px'
-        live2d_settings['waifuEdgeSide'] = 'left:0';  // 看板娘貼邊方向，例如 'left:0'(靠左 0px), 'right:30'(靠右 30px)
-        live2d_settings['waifuDraggable'] = 'axis-x'; // 拖拽樣式，例如 'disable'(禁用), 'axis-x'(只能水平拖移), 'unlimited'(自由拖移)
-        live2d_settings['waifuDraggableRevert'] = false;// 鬆開滑鼠還原拖拽位置，可選 true(真), false(假)
-        
-        // 其他雜項設定
-        live2d_settings['l2dVersion'] = '1.4.2';      // 目前版本
-        live2d_settings['l2dVerDate'] = '2018.11.12'; // 版本更新日期
-        live2d_settings['homePageUrl'] = 'auto';      // 主頁地址，可選 'auto'(自動), '{URL 網址}'
-        live2d_settings['aboutPageUrl'] = 'https://github.com/imuncle/live2d';// 關於頁地址, '{URL 網址}'
-        live2d_settings['screenshotCaptureName'] = 'live2d.png'; // 看板娘截圖檔名，例如 'live2d.png'
-        /* 在 initModel 前新增 */
-        initModel("assets/waifu-tips.json?v=1.4.2")
+      live2d_settings['tipsMessage'] = 'waifu-tips.json';         // 同目錄下可省略路徑
+      live2d_settings['hitokotoAPI'] = 'jinrishici.com';          // 一言 API，可選 'lwl12.com', 'hitokoto.cn', 'jinrishici.com'(古詩詞)
+
+      // 預設模型
+      live2d_settings['modelId'] = 1;                 // 預設模型 ID，可在 F12 控制檯找到
+      live2d_settings['modelTexturesId'] = 53;        // 預設材質 ID，可在 F12 控制檯找到
+
+      // 工具欄設定
+      live2d_settings['showToolMenu'] = true;         // 顯示工具欄，可選 true(真), false(假)
+      live2d_settings['canCloseLive2d'] = true;       // 顯示關閉看板娘按鈕，可選 true(真), false(假)
+      live2d_settings['canSwitchModel'] = true;       // 顯示模型切換按鈕，可選 true(真), false(假)
+      live2d_settings['canSwitchTextures'] = true;    // 顯示材質切換按鈕，可選 true(真), false(假)
+      live2d_settings['canSwitchHitokoto'] = true;    // 顯示一言切換按鈕，可選 true(真), false(假)
+      live2d_settings['canTakeScreenshot'] = true;    // 顯示看板娘截圖按鈕，可選 true(真), false(假)
+      live2d_settings['canTurnToHomePage'] = false;   // 顯示返回首頁按鈕，可選 true(真), false(假)
+      live2d_settings['canTurnToAboutPage'] = false;  // 顯示跳轉關於頁按鈕，可選 true(真), false(假)
+
+      // 模型切換模式
+      live2d_settings['modelStorage'] = false;       // 記錄ID(重新整理後恢復)，可選true(真), false(假)
+      live2d_settings['modelRandMode'] = 'switch';      // 模型切換，可選 'rand'(隨機), 'switch'(順序)
+      live2d_settings['modelTexturesRandMode'] = 'rand';// 材質切換，可選 'rand'(隨機), 'switch'(順序)
+
+      // 提示訊息選項
+      live2d_settings['showHitokoto'] = true;         // 顯示一言
+      live2d_settings['showF12Status'] = true;        // 顯示載入狀態
+      live2d_settings['showF12Message'] = false;      // 顯示看板娘訊息
+      live2d_settings['showF12OpenMsg'] = true;       // 顯示控制檯打開提示
+      live2d_settings['showCopyMessage'] = true;      // 顯示 複製內容 提示
+      live2d_settings['showWelcomeMessage'] = true;   // 顯示進入面頁歡迎詞
+
+      //看板娘樣式設定
+      live2d_settings['waifuSize'] = '400x300';     // 看板娘大小，例如 '280x250', '600x535'
+      live2d_settings['waifuTipsSize'] = '300x80';  // 提示框大小，例如 '250x70', '570x150'
+      live2d_settings['waifuFontSize'] = '23px';    // 提示框字型，例如 '12px', '30px'
+      live2d_settings['waifuToolFont'] = '23px';    // 工具欄字型，例如 '14px', '36px'
+      live2d_settings['waifuToolLine'] = '28px';    // 工具欄行高，例如 '20px', '36px'
+      live2d_settings['waifuToolTop'] = '-30px';     // 工具欄頂部邊距，例如 '0px', '-60px'
+      live2d_settings['waifuMinWidth'] = '768px'; // 面頁小於 指定寬度 隱藏看板娘，例如 'disable'(禁用), '768px'
+      live2d_settings['waifuEdgeSide'] = 'left:0';  // 看板娘貼邊方向，例如 'left:0'(靠左 0px), 'right:30'(靠右 30px)
+      live2d_settings['waifuDraggable'] = 'axis-x'; // 拖拽樣式，例如 'disable'(禁用), 'axis-x'(只能水平拖移), 'unlimited'(自由拖移)
+      live2d_settings['waifuDraggableRevert'] = false;// 鬆開滑鼠還原拖拽位置，可選 true(真), false(假)
+
+      // 其他雜項設定
+      live2d_settings['l2dVersion'] = '1.4.2';      // 目前版本
+      live2d_settings['l2dVerDate'] = '2018.11.12'; // 版本更新日期
+      live2d_settings['homePageUrl'] = 'auto';      // 主頁地址，可選 'auto'(自動), '{URL 網址}'
+      live2d_settings['aboutPageUrl'] = 'https://github.com/imuncle/live2d';// 關於頁地址, '{URL 網址}'
+      live2d_settings['screenshotCaptureName'] = 'live2d.png'; // 看板娘截圖檔名，例如 'live2d.png'
+      /* 在 initModel 前新增 */
+      initModel("assets/waifu-tips.json?v=1.4.2")
     </script>
-  <div>
-    <button id="all">全選</button>
-    <button id="copy">複製</button>
-    <button id="cut">剪下</button>
-    <button id="paste">貼上</button>
-  </div>
-  <div id="editable" contenteditable="true"></div>
-  <div>
-    <address>maker:<ins>Linchanghao</ins>,<ins>Yangshunxiang</ins></address>
-  </div>
+    <div>
+      <button id="all">全選</button>
+      <button id="copy">複製</button>
+      <button id="cut">剪下</button>
+      <button id="paste">貼上</button>
+    </div>
+    <div id="editable" contenteditable="true" style="background-color: grey; width: auto; height:auto;">
+      <a>請輸入文字</a>
+    </div>
+    <div>
+      <address>maker:<ins>Linchanghao</ins>,<ins>Yangshunxiang</ins></address>
+    </div>
 </body>
 
 </html>
