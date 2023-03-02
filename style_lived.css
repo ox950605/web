@@ -1,0 +1,12 @@
+.fbimage{
+  max-height: auto;
+  max-width: 70%;
+}
+.password{
+  max-width: 60;
+  max-height: 30;
+}
+form{
+  max-width: 60;
+  max-height: 30;
+}
